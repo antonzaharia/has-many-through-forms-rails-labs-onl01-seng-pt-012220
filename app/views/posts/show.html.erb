@@ -19,6 +19,7 @@
 </ul>
 
 <%= form_for @post.comments.build do |f| %>
+Write a comment:
 <%= f.hidden_field :post_id %>
 <%= f.collection_select :user_id, User.all, :id, :username, include_blank: "Choose a User"  %>
 <%= f.text_field :content %><br><br>
