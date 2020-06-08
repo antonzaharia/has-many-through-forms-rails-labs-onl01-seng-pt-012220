@@ -12,7 +12,4 @@ class Post < ActiveRecord::Base
     end
   end
 
-  def reject_posts(attributes)
-    attributes['name'].blank?
-  end
 end
