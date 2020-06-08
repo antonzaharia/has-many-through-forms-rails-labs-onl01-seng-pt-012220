@@ -6,4 +6,5 @@
   <% end %>
 </ul>
 
-<% @post.comments
+<% @post.comments.each do |comment| %>
+<p><%= comment.content %></p>
